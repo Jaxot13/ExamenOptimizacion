@@ -1,0 +1,182 @@
+*{
+	font-family: arial, sans-serif;
+}
+
+header{
+	text-align: center;
+	background-color: #ffffff80;
+	height: 350px;
+	margin: auto;
+}
+
+#banner{
+	width: 70%;
+    border-radius: 8px;
+	height: 250px;
+}
+
+h1{
+	text-align: center;
+	font-size: 40px;
+}
+
+h2{
+	text-align: center;
+	font-size: 15px;
+}
+
+/*Tienda*/
+
+.cont-ventas2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+	max-width: 60%;
+	margin: auto;
+}
+
+.poster{
+    border-radius: 8px;
+    border: 1px solid rgb(204, 204, 204);
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cont-ventas2 img {
+	width: 90%;
+	height: 200px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    align-self: center;
+    padding-top: 10px;
+}
+
+.cont-ventas2 img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 0 20px blue;
+}
+
+.cont-ventas2 h3 {
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+.cont-ventas2 h4{
+    width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+.cont-ventas2 button {
+	width: 30%;
+	height: 30px;
+	border-radius: 8px;
+	align-items: center;
+	background-color: rgb(56, 185, 73);
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.cont-ventas2 p {
+	width: 100%;
+	height: auto;
+	text-align: justify;
+}
+
+.cont-ventas2 button:hover{
+	background-color: rgb(106, 141, 218, 0.500);
+	box-shadow: 0px 0px 10px blue;
+	color: black;
+}
+
+/*Footer*/
+
+.footer{
+    background-color: #333;
+	color: lightgray;
+}
+
+.footer .cont-footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 6%;
+}
+.footer .cont-footer .info-tienda a,
+.footer .metodo-pago a,
+.footer .mas-info a{
+    text-decoration: none;
+    color: white;
+}
+.footer .cont-footer .info-tienda h2,
+.footer .metodo-pago h2,
+.footer .mas-info h2{
+    color: lightgray;
+}
+.footer .cont-footer .info-tienda .line,
+.footer .cont-footer .metodo-pago .line,
+.footer .cont-footer .mas-info .line,
+.footer .line{
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+    border: none;
+}
+.footer .line,
+.footer .socials{
+    padding-left: 10%;
+}
+
+.socials img{
+    width: 40px;
+}
+
+.footer a:hover{
+	color: lightblue;
+}
+
+/*@media*/
+
+@media(max-width: 1024px){
+    .cont-ventas2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 100px;
+        padding: 10px;
+    }
+
+    .footer .cont-footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+@media(max-width: 600px){
+    .cont-ventas2{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 100px;
+        padding: 10px;
+    }
+
+    .footer .cont-footer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
